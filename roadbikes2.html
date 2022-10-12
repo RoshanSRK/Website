@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body{
+				background-image: url('images/roadbikes-background.jpg');
+				background-size: cover;
+				}
+
+				
+			 h1{
+				text-align: center;
+				color: #fff;
+				}
+			
+			h2,p{
+				margin-left: 30px;
+				color: #fff;
+				}
+				
+			div.gallery {
+				margin: 15px;
+				margin-bottom:0px;
+				margin-top: 0px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 400px;
+				background: #fff ;
+				opacity: 1.0;
+				border-radius: 100px;
+				text-align: center;
+				
+			  }
+			  
+			 div.gallery:hover {
+				border: 1px solid #777;
+				opacity: 0.50;
+			  }
+			  
+			 div.gallery img {
+				width:90%;
+				height: auto;
+				opacity: 1.0;
+				border-radius: 300px;
+				padding-top:5px;
+			  }
+			  
+			 div.desc {
+				padding: 20px;
+				text-align: center;
+				font-size: large;
+			  }
+				
+			#blocks{
+				margin:auto;
+				width: 85%;
+				padding: 10px;
+			 }
+			 
+			button {
+			   border: none;
+			   color: brown;
+			   padding: 15px 32px;
+			   text-align: center;
+			   text-decoration: none;
+			   display: inline-block;
+			   font-size: 16px;
+			   margin: 4px 2px;
+			   border-radius: 50px;
+			   border-color: grey;
+			   cursor: pointer;
+			 }
+					 
+			.button1{
+			   background-color: white;
+			   float: right;
+			   
+			}
+			.button2{
+			   background-color: white;
+			   float: left;			   
+			}
+
+		 .container {
+				position: relative;
+				width: 50%;
+				align-content: center;
+				float:left;
+			  }
+			  
+		.image {
+				display: block;
+				width: 100%;
+				height: auto;
+				width:100%;
+				height: auto;
+				opacity: 1.0;
+				border-radius: 300px;
+				padding-top:5px;
+				text-align: center;
+				
+			  }
+			  
+		.overlay {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 100%;
+				width: 100%;
+				opacity: 0;
+				transition: .5s ease;
+				background-color: white;
+				border-radius:300px;
+			  }
+			  
+		.container:hover .overlay {
+				opacity: 0.8;
+			
+			  }
+			  
+		.text {
+				color: black;
+				font-size: 30px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				text-align: center;
+			  }
+
+				
+		</style>
+		<title>Road bikes</title>
+		<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/22/22603.png">
+		
+	</head>
+	<body>
+		<a target="_self" href="contact.html">
+		     <button class="button1" type="button">Contact us!</button>
+		</a>
+		<a target="_self" href="home.html">
+		     <button class="button2" type="button">Go back</button>
+		</a>
+		<h1>Here you can browse our roadbikes.</h1><br>
+		<p><i>Click on the image to view it in a new tab.</i></p>
+		
+		<div id="blocks">
+			<table>
+				<tr>
+					<td>
+							<a target="_blank" href="images/adventure.jfif">
+							  <div class="container">
+								<img src="images/adventure.jfif" alt="Aventure" class="image">
+								<div class="overlay">
+								  <div class="text">Adventure</div>
+								</div>
+							  </div>
+							</a>
+					</td>
+					<td>
+						<a target="_blank" href="images/harley-davidson.jpg">
+							  <div class="container">
+								<img src="images/harley-davidson.jpg" alt="Cruiser" class="image">
+								<div class="overlay">
+								  <div class="text">Cruiser</div>
+								</div>
+							  </div>
+						</a>
+					</td>
+					<td>
+						<a target="_blank" href="images/nakedmoto.png">
+							  <div class="container">
+								<img src="images/nakedmoto.png" alt="nakedmoto" class="image">
+								<div class="overlay">
+								  <div class="text">Naked motorcycle</div>
+								</div>
+							  </div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a target="_blank" href="images/sportsbike.jpg">
+							  <div class="container">
+								<img src="images/sportsbike.jpg" alt="sportsbike" class="image">
+								<div class="overlay">
+								  <div class="text">Sportsbike</div>
+								</div>
+							  </div>
+						</a>
+						
+					</td>
+					<td>
+						<a target="_blank" href="images/tourer.png">
+							  <div class="container">
+								<img src="images/tourer.png" alt="tourer" class="image">
+								<div class="overlay">
+								  <div class="text">Tourer</div>
+								</div>
+							  </div>
+						</a>
+					</td>
+					<td>
+						<a target="_blank" href="images/sportstourer.jfif">
+							  <div class="container">
+								<img src="images/sportstourer.jfif" alt="sportstourer" class="image">
+								<div class="overlay">
+								  <div class="text">Sports Tourer</div>
+								</div>
+							  </div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a target="_blank" href="images/classic.jpg">
+							  <div class="container">
+								<img src="images/classic.jpg" alt="classic" class="image">
+								<div class="overlay">
+								  <div class="text">Classic</div>
+								</div>
+							  </div>
+						</a>
+					</td>
+					<td>
+						<a target="_blank" href="images/scooter.jfif">
+							  <div class="container">
+								<img src="images/scooter.jfif" alt="scooter" class="image">
+								<div class="overlay">
+								  <div class="text">Scooter</div>
+								</div>
+							  </div>
+						</a>
+					</td>
+					<td>
+						<a target="_blank" href="images/custom.jfif">
+							  <div class="container">
+								<img src="images/custom.jfif" alt="custom" class="image">
+								<div class="overlay">
+								  <div class="text">Custom</div>
+								</div>
+							  </div>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		
+	</body>
+</html>

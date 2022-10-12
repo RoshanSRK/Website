@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style type="text/css">
+			body{
+				background-image: url('images/background.jpg');
+				background-size: cover;
+			 }
+			 
+			#contact-head{
+				color:white;
+				text-align: center;		
+			}
+			 
+			h1{
+				text-align: center;
+				color: black;
+			 }
+			 
+			 h2{
+				text-align: center;
+			 }
+			
+			fieldset{
+				background: rgb(62,218,226);
+				background: linear-gradient(180deg, rgba(62,218,226,1) 0%, rgba(126,226,233,1) 15%, rgba(164,246,254,1) 35%, rgba(206,255,255,1) 100%);
+				text-align: left;
+				border-radius: 30px;
+				margin: 10px;
+				align-self: center;
+			}
+	
+			.center{
+				margin:auto;
+				width: 68%;
+				padding: 10px;
+			}
+			
+			
+			input[type=text]{
+				border-radius: 8px;
+				padding: 5px;
+				margin: 2px;
+				transition: width 0.4s ease-in-out;
+			}
+			
+			input[type=text]:focus {
+				border: 3px solid #555;
+				width: 50%;
+				background-color: lightgrey;
+			  }
+			  
+			textarea{
+				border-radius: 10px;
+				width: 500px;
+				height: 200px;
+
+			}
+			input[type=submit] {
+				background-color: #04AA6D;
+				border: none;
+				color: white;
+				padding: 16px 32px;
+				text-decoration: none;
+				margin: 4px 2px;
+				cursor: pointer;
+				border-radius: 10px;
+			}
+			
+			input[type=reset] {
+				background-color:pink;
+				border: none;
+				color: white;
+				padding: 16px 32px;
+				text-decoration: none;
+				margin: 4px 2px;
+				cursor: pointer;
+				border-radius:10px;
+			}
+			
+			table{
+				border:3px;
+				border-color:black;
+				background: rgb(103,124,209);
+				background: linear-gradient(180deg, rgba(103,124,209,1) 0%, rgba(75,140,144,1) 47%, rgba(28,214,206,1) 100%);
+				border-radius: 10px;
+				font-size: large;
+			}
+			
+			td{
+				color: white;
+			}
+			
+			button {
+			   border: none;
+			   color: brown;
+			   padding: 15px 32px;
+			   text-align: center;
+			   text-decoration: none;
+			   display: inline-block;
+			   font-size: 16px;
+			   margin: 4px 2px;
+			   border-radius: 50px;
+			   border-color: grey;
+			   cursor: pointer;
+			 }
+					 
+			.button2{
+			   background-color: white;
+			   float: left;
+			   
+			}
+			
+			.card {
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+				max-width: 300px;
+				margin: auto;
+				text-align: center;
+				font-family: arial;
+				background-color: lightgrey;
+				border-radius: 50px;
+			  }
+			  
+			.title {
+				color: black;
+				font-size: 18px;
+			  }
+			  
+			.button3 {
+				border-radius: 50px;
+				outline: 0;
+				display: inline-block;
+				padding: 8px;
+				color: white;
+				background-color: #000;
+				text-align: center;
+				cursor: pointer;
+				width: 90%;
+				font-size: 18px;
+				margin-bottom: 15px;
+			  }
+			  
+			a {
+				text-decoration: none;
+				font-size: 22px;
+				color: black;
+			  }
+			.left{
+				float:left;
+				padding: 10px;
+			}
+			.right{
+				
+			}
+			
+			#pfp{
+				width:100%;
+				border-radius: 50px;
+			}
+		</style>
+		<title>Contact Us!</title>
+		<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/1034/1034182.png">
+		
+	</head>
+	<body>
+		<a target="_self" href="home.html">
+		     <button class="button2" type="button">Go back</button>
+		</a>
+		<h1 id="contact-head">Here are my contact details for further queries:</h1>
+		<div class="center">
+			<div class="left">
+				<div class="card">
+					<img id="pfp" src="images/profilepic.png" alt="Me">
+					<h1>Roshan Kokil</h1>
+					<p class="title">CEO & Founder</p>
+					<p>University of Mauritius</p>
+					<div style="margin: 24px 0;">
+					  <a href="https://twitter.com/RoshanSRKokil"><i class="fa fa-twitter"></i></a>  
+					  <a href="https://www.linkedin.com/in/roshan-kokil-aa574418a/"><i class="fa fa-linkedin"></i></a>  
+					  <a href="https://www.facebook.com/roshan.kokil.3/"><i class="fa fa-facebook"></i></a> 
+					</div>
+					<p><button class="button3">Contact</button></p>
+				</div>
+			</div>
+			
+			<div class="right">
+				<table class="center" border=1>
+					<tr><th>Location</th> <td>Rose-Hill</td></tr>
+					<tr><th>Phone number</th> <td>(+230) 5797 9462</td></tr>
+					<tr> <th>Email address</th> <td>rsrkokil@gmail.com</td></tr>
+					<tr><th>Age</th><td>20</td></tr>
+				</table>
+				<div class="center">
+					<fieldset>
+					<h2>Enter your contact details</h2>
+					<form action= "process.php" method="GET">
+						First Name: <input type="text"><br>
+						Last Name :  <input type="text"><br>
+						Email Address: <input type="text"><br>
+						Phone Number: <input type="text"><br>
+						Gender:
+						Female<input type="radio" name="gen">
+						Male<input type="radio" name ="gen"><br><br>
+						<textarea>Type your queries/ Quote requests here!</textarea><br>
+						Subscribe to our newsletters: <input type="checkbox"><br>
+						<i>I agree that any information that I enter can be used by the organisation to contact me.</i><input type="checkbox"><br><hr>
+					  
+		
+					  <input type="reset">
+					  <input type="submit"> <br>
+		
+				   </form>
+				</div>
+		</div>
+		</div>
+
+		
+		
+
+	</body>
+	
+</html>
